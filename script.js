@@ -29,7 +29,6 @@ function displayContent(menuOption) {
     const skills_accomplishments = document.getElementById("skills_accomplishments_content");
     const job_experience = document.getElementById("job_exp_content");
 
-
     // hide all content initially
     bio.style.display = 'none';
     contact_info.style.display = 'none';
