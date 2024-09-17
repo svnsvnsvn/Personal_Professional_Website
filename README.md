@@ -1,3 +1,2 @@
-### Hi
-## Hello
-# Hey
+## Hello!
+### This portfolio website showcases Ann Ubaka's professional background, skills, and experiences as a Software Engineer. The site is built using HTML, CSS, and JavaScript, and includes various sections that highlight academic and professional achievements, personal interests, and contact information.

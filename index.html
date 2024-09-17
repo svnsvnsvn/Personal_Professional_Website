@@ -5,87 +5,102 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cute+Font&display=swap" rel="stylesheet">
     <title>Portfolio</title>
 </head>
 
 <body>
-    <header>
-    <h1>Ann Ubaka</h1>
-    <h2>Software Engineer</h2>
-    </header>
+    
 
     <div id = "portfolio_rectangle">
+
         <div class = "portfolio_navbar">
-        <h3>Placeholder</h3>
+       <header>
+            <h1>Ann Ubaka</h1>
+            <h2>Software Engineer</h2>
+        </header> 
         <ul>
-            <li><button class = "menuOption" id = aboutMe">About me!</button></li>
-            <li><button class = "menuOption" id = "networking">Where to Find Me!</button></li>
-            <li><button class = "menuOption" id = "resume">Some cool things!</button></li>
-            <li><button class = "menuOption" id = "workExperience">What I've been up to!</button></li>
+            <li><button class = "menuOption" id = aboutMe">About me</button></li>
+            <li><button class = "menuOption" id = "networking">Where to Find Me</button></li>
+            <li><button class = "menuOption" id = "resume">Some cool things</button></li>
+            <li><button class = "menuOption" id = "workExperience">What I've been up to</button></li>
         </ul>
         </div>
 
-    </div>
-    <div class = "portfolio_content">
-        <h1 id = "selected_content"> Menu Option </h1>
-        <p id = "optionPlaceholder">Hi! Choose an option to learn more about me!</p>
+    
+        <div class = "portfolio_content">
+            <h1 id = "selected_content"> Menu Option </h1>
+            <p id = "optionPlaceholder"> Hi! Please choose an option to learn more about me!</p>
 
-        <div id = "short_bio">
-            <h2>About Me:</h2>
-            <img src = "img/cat.jpg" alt = "Place holder kitty">
-            <p> My name is Ann and I am a junior majoring in computer science with minors in cybersecurity and data science. </p>
-            <p> My main programming languages are c++ and python.</p> <br>
-            <p> I hope to specialize in <span> artificial intelligence and machine learning.</span></p>
-        </div>
+            <div id = "short_bio_content" class = "content">
+                <p> My name is <span id = "fullname">Ann Ubaka</span>, and I am currently a junior majoring in <span class = "skill">Computer Science</span> with minors in Cybersecurity and Data Science. With a passion for technology and problem-solving, I am deeply committed to expanding my knowledge in these rapidly evolving fields. My academic journey has provided me with a solid foundation in both theoretical and practical aspects of computing. </p>
+
+                <p> I have developed proficiency in programming languages such as <span class = "skill">C++</span> and <span class = "skill">Python</span>, which are my primary tools for tackling complex projects and solving coding challenges. In addition to my technical skills, I am highly interested in securing systems and data, which is why I chose to minor in <span class = "skill">Cybersecurity</span>. My interest in <span class = "skill">Data Science</span> also allows me to explore data-driven solutions and enhance my analytical skills. </p>
+                
+                <p> As I look toward the future, I aim to specialize in Artificial Intelligence and Machine Learning. These areas offer incredible potential for innovation and impact across various industries. My goal is to contribute to the development of intelligent systems that can revolutionize the way we live and work, while continuing to grow both personally and professionally in the tech world. </p>
+                
+                <img id = "professionalPhoto" src = "img/photo_ubaka.jpeg" alt = "Photo of Ann Ubaka">
+            </div>
+            
+            <div id = "contact_info_content" class = "content">
+                <ul> Relevant Profiles:
+                <li> <a href="https://github.com/svnsvnsvn" target="_blank">GitHub</a></li>
+                <li> <a href="https://www.codewars.com/users/svnsvnsvn" target="_blank">Codewars</a></li>
+                <li> <a href="https://www.linkedin.com/in/helloworld7" target="_blank">LinkedIn</a></li>
+                </ul>
+            </div>
         
-        <div id = "contact_info">
-            <ul> Find me on:
-            <li> <a href="">GitHub</a></li>
-            <li> <a href="">Codewars</a></li>
-            <li> <a href="">LinkedIn</a></li>
-            </ul>
+            <div id = "skills_accomplishments_content" class = "content">
+                <ul> My key skills include: 
+                    <li>HTML/JS/CSS</li>
+                    <li>CPP</li>
+                    <ul><li>Python</li>
+                        <li class = "python">pandas</li>
+                        <li class = "python">flask</li>
+                        <li class = "python">matplotlib</li>
+                        <li class = "python">selenium</li>
+                        <li class = "python">pytorch</li>
+                    </ul>
+                </ul>
+        
+                <ol> My recent professional experiences or academic achievements: 
+                    <li>Jennifer Glock Fellow</li>
+                    <li>President's List/Dean's List</li>
+                    <li>Association for Computing Machinery Vice President</li>
+                </ol>
+            </div>
+        
+            <div id = "job_exp_content" class = "content">
+                <table>
+                    <caption>Role Descriptions</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">Role</th>
+                            <th scope="col">Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Undergraduate Researcher  <br>(Summer 2024)</td>
+                            <td>Led research in AI, computer vision, and cybersecurity, with a focus on panoptic perception. Worked on evaluating attack and defense mechanisms to enhance the performance of the YOLO-P model.</td>
+                        </tr>
+                        <tr>
+                            <td>Programming Tutor  <br>(Fall 2024) </td>
+                            <td>Tutored students in Python and C++, assisting with coding skills, debugging, and problem-solving.</td>
+                        </tr>
+                        <tr>
+                            <td>Teaching Assistant <br>(Spring 2024)</td>
+                            <td>Worked directly with students to help them grasp course concepts, guiding them through challenging material, answering questions, and providing one-on-one or group support to improve their understanding and performance.</td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                
         </div>
-    
-        <div id = "skills_accomplishments">
-            <ul> My key skills include: 
-                <li>HTML/JS/CSS</li>
-                <li>CPP</li>
-                <li>Python</li>
-            </ul>
-    
-            <ol> My recent professional experiences or academic achievements: 
-                <li></li>
-                <li></li>
-                <li></li>
-            </ol>
-        </div>
-    
-        <div id = "job_exp">
-            <table>
-                <tr>
-                    <th>Role</th>
-                    <th>Description</th>
-                </tr>
-                <tr>
-                    <td>
-                        A
-                    </td>
-                    <td>
-                        B
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        a
-                    </td>
-                    <td>
-                        b
-                    </td>
-                </tr>
-            </table>
     </div>
-    </div>
-    
+</div>
 </body>
 
 <script src = "script.js"></script>
