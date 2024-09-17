@@ -14,7 +14,6 @@ window.addEventListener("load", function() {
         // Change background color of clicked button to 
         button.style.backgroundColor = "#ba8f6a";
 
-
         var option = (button.textContent);
         displayContent(option);
         });
