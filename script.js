@@ -25,7 +25,6 @@ window.addEventListener("load", function() {
         submitButton.textContent = "Submitted!";
     });
     
-
 });
 
 function displayContent(menuOption) {
