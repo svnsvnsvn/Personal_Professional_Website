@@ -18,6 +18,14 @@ window.addEventListener("load", function() {
         displayContent(option);
         });
     });
+
+    const submitButton = document.getElementById('submitButton');
+    submitButton.addEventListener('click', function() {
+        submitButton.style.backgroundColor = '#A9DFF7';
+        submitButton.textContent = "Submitted!";
+    });
+    
+
 });
 
 function displayContent(menuOption) {

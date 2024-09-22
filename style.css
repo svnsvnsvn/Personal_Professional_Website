@@ -30,9 +30,9 @@ ul {
 #portfolio_rectangle {
     background-color: #6f5029;
     border: 1px #3f280c solid;
-    width: 1200px;
+    width: 1600px;
     min-height: 100%;
-    margin: 0px auto;
+    margin: auto;
     display:flex;
     color: white;
     border-radius: 23px;
@@ -54,7 +54,7 @@ ul {
 
 .portfolio_content {
     padding: 20px;
-    max-width: 100%;
+    max-width: 80%;
     max-height: 100%;
     display: block;
     margin: auto;
@@ -148,4 +148,15 @@ td {
 /* Alternating row colors */
 tr:nth-child(even) {
     background-color: #f2f2f2;
+}
+
+#connectWithMe, label{
+    text-align: center;
+    font-family: "Cute Font";
+    font-size: 30px;
+}
+
+#connectWithMe {
+    max-width: 75%;
+    border-radius: 30px;
 }
