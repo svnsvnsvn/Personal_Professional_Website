@@ -1,5 +1,13 @@
 # Personal Portfolio Website
 
+## Table of Contents
+1. [Description](#description)
+2. [How to Install and Run the Project](#how-to-install-and-run-the-project)
+   - [To Clone the Project](#to-clone-the-project)
+   - [To Open the Project](#to-open-the-project)
+3. [Usage](#usage)
+4. [Features](#features)
+   
 ## Description 
 This personal portfolio was developed as part of a software design and development assignment. Built with HTML, CSS, and JavaScript, this project showcases my professional progress, skills, and accomplishments in the field of software development.
 
