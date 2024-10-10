@@ -21,13 +21,24 @@ window.addEventListener("load", function () {
 
     const submitButton = document.getElementById('submitButton');
     const text_field = document.getElementById('connectWithMe');
-    submitButton.addEventListener('click', function () {
-        event.preventDefault()
-        submitButton.style.backgroundColor = '#A9DFF7';
-        submitButton.textContent = "Submitted!";
-        text_field.textContent = "Thank you for reaching out. We'll be in touch soon.";
-    });
 
+    submitButton.addEventListener('click', function (event) {
+        event.preventDefault();
+
+        // Get the value entered in the text field
+        const userInput = text_field.value;
+
+        // Check if the user has entered something
+        if (userInput.trim() !== "") {
+            // Change the button and display a thank you message
+            submitButton.style.backgroundColor = '#A9DFF7';
+            submitButton.textContent = "Submitted!";
+            text_field.value = "Thank you for reaching out. We'll be in touch soon.";
+        } else {
+            // If nothing was entered, prompt the user
+            alert("Please enter a message before submitting.");
+        }
+    });
 });
 
 function displayContent(menuOption) {
@@ -66,7 +77,5 @@ function displayContent(menuOption) {
             text_placeholder.textContent = '';
             job_experience.style.display = 'block';
         }
-
     }
-
 }
