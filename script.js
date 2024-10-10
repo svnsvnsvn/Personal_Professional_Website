@@ -1,30 +1,33 @@
-window.addEventListener("load", function() {
+window.addEventListener("load", function () {
     // Retrieve menu optons
     const menuOptions = document.querySelectorAll('.menuOption')
-    
+
     // Add event listeners to menu options
-    menuOptions.forEach(function(button) {
-        button.addEventListener('click', function() {
+    menuOptions.forEach(function (button) {
+        button.addEventListener('click', function () {
 
-        // Reset background color of all buttons
-        menuOptions.forEach(function(btn) {
-            btn.style.backgroundColor = ''; // Reset to default
-        });
+            // Reset background color of all buttons
+            menuOptions.forEach(function (btn) {
+                btn.style.backgroundColor = ''; // Reset to default
+            });
 
-        // Change background color of clicked button to 
-        button.style.backgroundColor = "#ba8f6a";
+            // Change background color of clicked button to 
+            button.style.backgroundColor = "#ba8f6a";
 
-        var option = (button.textContent);
-        displayContent(option);
+            var option = (button.textContent);
+            displayContent(option);
         });
     });
 
     const submitButton = document.getElementById('submitButton');
-    submitButton.addEventListener('click', function() {
+    const text_field = document.getElementById('connectWithMe');
+    submitButton.addEventListener('click', function () {
+        event.preventDefault()
         submitButton.style.backgroundColor = '#A9DFF7';
         submitButton.textContent = "Submitted!";
+        text_field.textContent = "Thank you for reaching out. We'll be in touch soon.";
     });
-    
+
 });
 
 function displayContent(menuOption) {
@@ -45,22 +48,22 @@ function displayContent(menuOption) {
     if (menuOptionHeader && text_placeholder) {
 
         menuOptionHeader.textContent = menuOption;
-        text_placeholder.textContent = 'Please click an option to learn more about me!'; 
+        text_placeholder.textContent = 'Please click an option to learn more about me!';
 
-        if (menuOptionHeader.textContent === 'About me'){
-            text_placeholder.textContent = 'Nice to meet you!'; 
+        if (menuOptionHeader.textContent === 'About Me') {
+            text_placeholder.textContent = 'Nice to meet you!';
             bio.style.display = 'block';
         }
-        if (menuOptionHeader.textContent === 'Where to Find Me'){
-            text_placeholder.textContent = ''; 
+        if (menuOptionHeader.textContent === 'Where to Find Me') {
+            text_placeholder.textContent = '';
             contact_info.style.display = 'block';
         }
-        if (menuOptionHeader.textContent === 'Some cool things'){
-            text_placeholder.textContent = ''; 
+        if (menuOptionHeader.textContent === 'Some cool things') {
+            text_placeholder.textContent = '';
             skills_accomplishments.style.display = 'block';
         }
-        if (menuOptionHeader.textContent === "What I've been up to"){
-            text_placeholder.textContent = ''; 
+        if (menuOptionHeader.textContent === "What I've been up to") {
+            text_placeholder.textContent = '';
             job_experience.style.display = 'block';
         }
 

@@ -4,21 +4,26 @@ header {
 
 body {
     background-color: #e8b68a;
-    color: #ffffff; /* White text */
+    color: #ffffff;
+    /* White text */
     margin: 200px auto;
     padding: 0;
     min-width: 400px;
     font-family: "Cute Font";
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
     font-size: 60px;
     margin: 0px;
-    color:#3f280c;
+    color: #3f280c;
 }
 
-#selected_content, #fullname, .skill {
-    color:#abd6e7;
+#selected_content,
+#fullname,
+.skill {
+    color: #abd6e7;
 }
 
 ul {
@@ -34,7 +39,7 @@ ul {
     width: 1600px;
     min-height: 100%;
     margin: auto;
-    display:flex;
+    display: flex;
     color: white;
     border-radius: 23px;
 }
@@ -63,7 +68,7 @@ ul {
 
 }
 
-.menuOption {    
+.menuOption {
     font-size: 25px;
     font-family: "Cute Font";
     background-color: #e8b68a;
@@ -85,7 +90,10 @@ p {
 
 }
 
-ul, ol, table, #optionPlaceholder {
+ul,
+ol,
+table,
+#optionPlaceholder {
     font-size: 40px;
 }
 
@@ -96,10 +104,10 @@ ul, ol, table, #optionPlaceholder {
 
 a {
     text-decoration: none;
-    color:#cba576;
+    color: #cba576;
 }
 
-a:hover{
+a:hover {
     color: #abd6e7;
 }
 
@@ -108,7 +116,7 @@ img {
     margin: 0px auto;
 }
 
-li.python{
+li.python {
     color: #cba576;
 }
 
@@ -116,9 +124,11 @@ li.python{
 table {
     width: 100%;
     border-collapse: collapse;
-    background-color: #ffffff; /* Light background color */
+    background-color: #ffffff;
+    /* Light background color */
     margin-top: 20px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Light shadow */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    /* Light shadow */
 }
 
 caption {
@@ -128,7 +138,8 @@ caption {
     color: #abd6e7;
 }
 
-th, td {
+th,
+td {
     padding: 15px;
     text-align: left;
     border-bottom: 1px solid #ddd;
@@ -136,7 +147,8 @@ th, td {
 }
 
 th {
-    background-color: #8b5d33; /* Darker brown for headers */
+    background-color: #8b5d33;
+    /* Darker brown for headers */
     color: white;
     font-weight: bold;
     text-transform: uppercase;
@@ -151,7 +163,8 @@ tr:nth-child(even) {
     background-color: #f2f2f2;
 }
 
-#connectWithMe, label{
+#connectWithMe,
+label {
     text-align: center;
     font-family: "Cute Font";
     font-size: 30px;
