@@ -174,3 +174,7 @@ label {
     max-width: 75%;
     border-radius: 30px;
 }
+
+#connectWithMe::placeholder {
+    color: #a48054;
+}
