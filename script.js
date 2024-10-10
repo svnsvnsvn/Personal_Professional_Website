@@ -69,11 +69,11 @@ function displayContent(menuOption) {
             text_placeholder.textContent = '';
             contact_info.style.display = 'block';
         }
-        if (menuOptionHeader.textContent === 'Some cool things') {
+        if (menuOptionHeader.textContent === 'Some Cool Things') {
             text_placeholder.textContent = '';
             skills_accomplishments.style.display = 'block';
         }
-        if (menuOptionHeader.textContent === "What I've been up to") {
+        if (menuOptionHeader.textContent === "What I've Been Up To") {
             text_placeholder.textContent = '';
             job_experience.style.display = 'block';
         }
